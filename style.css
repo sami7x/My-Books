@@ -1,3 +1,33 @@
 body {
-  background-color: pink;
+  /* background-color: #bbe9ff; */
+  display: flex;
+  flex-direction: column;
+  color: black;
+  align-items: center;
+  justify-content: center;
+  height: 50vh;
+  width: 100%;
+  margin: 0;
+}
+
+.search {
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+
+  /* background-color: aqua; */
+  padding: 20px;
+}
+
+table {
+  border-collapse: collapse;
+  justify-content: center;
+  width: 100%;
+}
+tr td {
+  padding: 10px;
+}
+
+tr:hover {
+  background-color: #bbe9ff;
 }
