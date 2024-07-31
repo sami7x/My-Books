@@ -43,8 +43,7 @@ $books = file("books.txt", FILE_IGNORE_NEW_LINES);
                 <a href="edit.php?title=<?php echo urlencode($title); ?>"> Edit </a>
             </td>
             <td>
-                Delete
-                <!-- <a href="edit.php?title=<?php echo urlencode($title); ?>"> Edit </a> -->
+                <a href="delete.php?title=<?php echo urlencode($title); ?>"> Delete </a>
             </td>
         </tr>
     <?php endforeach; ?>
