@@ -19,6 +19,9 @@ $books = file("books.txt", FILE_IGNORE_NEW_LINES);
         <th>
             Status
         </th>
+        <th colspan="2">
+            Action
+        </th>
     </tr>
 
     <?php foreach ($books as $book) : ?>
@@ -35,6 +38,13 @@ $books = file("books.txt", FILE_IGNORE_NEW_LINES);
             </td>
             <td>
                 <?php echo htmlspecialchars($status); ?>
+            </td>
+            <td>
+                <a href="edit.php?title=<?php echo urlencode($title); ?>"> Edit </a>
+            </td>
+            <td>
+                Delete
+                <!-- <a href="edit.php?title=<?php echo urlencode($title); ?>"> Edit </a> -->
             </td>
         </tr>
     <?php endforeach; ?>
