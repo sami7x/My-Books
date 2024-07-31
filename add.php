@@ -5,7 +5,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $genre = $_POST["genre"];
     $status = $_POST["status"];
 
-    $book = "$title, $author, $genre, $status";
+    $book = "$title, $author, $genre, $status\n";
     file_put_contents("books.txt", $book, FILE_APPEND);
     header("Location: index.php"); //redirects to this page after submitting
     exit;

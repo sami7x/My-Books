@@ -25,16 +25,16 @@ $books = file("books.txt", FILE_IGNORE_NEW_LINES);
         <?php list($title, $author, $genre, $status) = explode(",", $book); ?>
         <tr>
             <td>
-                </php echo htmlspecialchars($title);?>
+                <?php echo htmlspecialchars($title); ?>
             </td>
             <td>
-                </php echo htmlspecialchars($author); ?>
+                <?php echo htmlspecialchars($author); ?>
             </td>
             <td>
-                </php echo htmlspecialchars($genre); ?>
+                <?php echo htmlspecialchars($genre); ?>
             </td>
             <td>
-                </php echo htmlspecialchars($status); ?>
+                <?php echo htmlspecialchars($status); ?>
             </td>
         </tr>
     <?php endforeach; ?>
