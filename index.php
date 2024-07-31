@@ -10,6 +10,7 @@
 <body>
     <?php
     include "add.php";
+    include "view.php";
 
     ?>
 </body>
